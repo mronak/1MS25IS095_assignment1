@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PaperTrail — Research Paper Investigation Workspace</title>
+    <meta name="description" content="An AI-powered academic research investigation workspace that converts computer science papers into structured technical notes, system architecture diagrams, and realistic undergraduate project opportunities." />
+    <meta property="og:title" content="PaperTrail — Research Paper Investigation Workspace" />
+    <meta property="og:description" content="An AI-powered academic research investigation workspace that converts computer science papers into structured technical notes, system architecture diagrams, and realistic undergraduate project opportunities." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      // In AI Studio / Cloud Run, dev server runs in an iframe where HMR WebSockets are disabled.
+      // Suppress unhandled HMR WebSocket connection errors per environment constraints.
+      window.addEventListener('error', function (event) {
+        if (
+          event.message?.includes('WebSocket') ||
+          event.filename?.includes('@vite/client') ||
+          String(event.error?.stack || '').includes('createWebSocketModuleRunnerTransport')
+        ) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function (event) {
+        var reason = event.reason?.message || String(event.reason || '');
+        var stack = String(event.reason?.stack || '');
+        if (
+          reason.includes('WebSocket') ||
+          reason.includes('createWebSocketModuleRunnerTransport') ||
+          stack.includes('@vite/client') ||
+          stack.includes('createWebSocketModuleRunnerTransport')
+        ) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-[#FBF9F5] text-[#1C1917] antialiased selection:bg-[#FED7AA] selection:text-[#9A3412]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

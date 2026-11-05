@@ -1,0 +1,6 @@
+{
+  "name": "PaperTrail — Research Paper Investigation Workspace",
+  "description": "An AI-powered academic research investigation workspace that converts computer science papers into structured technical notes, system architecture diagrams, and realistic undergraduate project opportunities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
