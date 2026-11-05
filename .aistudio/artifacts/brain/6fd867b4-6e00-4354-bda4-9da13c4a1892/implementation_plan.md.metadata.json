@@ -1,0 +1,6 @@
+{
+  "summary": "Updated implementation plan for PaperTrail incorporating refinements for Crossref/Semantic Scholar title resolution with explicit analysis scope disclosure, strict URL access restriction handling with PDF fallback recommendations, and backend-only GEMINI_API_KEY security enforcement.",
+  "updatedAt": "2026-11-05T15:07:25.171668953Z",
+  "requestFeedback": true,
+  "userFacing": true
+}

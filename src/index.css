@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper-bg: #FBF9F5;
+    --paper-card: #FFFFFF;
+    --paper-muted: #F4F1EA;
+    --paper-border: #E7E5E4;
+    --paper-charcoal: #1C1917;
+    --paper-body: #44403C;
+    --paper-terracotta: #C2410C;
+    --paper-terracotta-dark: #9A3412;
+  }
+
+  body {
+    background-color: var(--paper-bg);
+    color: var(--paper-charcoal);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Newsreader', Georgia, Cambria, 'Times New Roman', serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'IBM Plex Mono', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
+}
+
+/* Custom scrollbar for clean editorial reading */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6D3D1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A29E;
+}
+
+/* Subtle paper rule / watermark border */
+.paper-rule {
+  background-image: linear-gradient(to right, transparent, #E7E5E4 15%, #E7E5E4 85%, transparent);
+}
+
+/* Print styles for export */
+@media print {
+  header, nav, button, .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
